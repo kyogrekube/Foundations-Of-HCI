@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Circle's Edge, Inc. - Updated Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --accent-darkred: #750000;
+            --accent-red: #c01717;
+            --accent-green: #47aa58;
+            --accent-orange: #ff751f;
+            --accent-yellow: #ffbd59;
+            --accent-teal: #0097b2;
+            --accent-blue: #004aad;
+            --accent-black: #000000;
+            --bg-color: #f8fafc; /* white background color */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            scroll-behavior: smooth;
+        }
+        .section-padding {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
+        .btn-primary {
+            background-color: var(--accent-darkred);
+            transition: background-color 0.3s;
+        }
+        .btn-primary:hover {
+            background-color: #c01717; /* Slightly darker blue */
+        }
+        .nav-link:hover {
+            color: var(--accent-yellow);
+        }
+        /* Custom border/ring color for focus */
+        .focus-ring-accent:focus {
+            --tw-ring-color: var(--accent-yellow);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+            <div class="text-2xl font-extrabold text-gray-900 flex items-center">
+                <img src="./media/circlesEdgelogo1.png" alt="Circle's Edge Logo" class="w-14 mr-2">
+                The Circle's Edge
+            </div>
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex space-x-8 font-medium">
+                <a href="#home" class="nav-link text-gray-600 transition-colors">Home</a>
+                <a href="#about" class="nav-link text-gray-600 transition-colors">About Us</a>
+                <a href="#acknowledgements" class="nav-link text-gray-600 transition-colors">Acknowledgements</a>
+                <a href="#join" class="nav-link text-gray-600 transition-colors">Join Us</a>
+                <a href="#donate" class="nav-link text-gray-600 transition-colors">Donate</a>
+                <a href="#contact" class="nav-link text-gray-600 transition-colors">Contact</a>
+            </nav>
+            <!-- Mobile Menu Button (Hamburger) - Non-functional for static mockup -->
+            <button class="md:hidden p-2 rounded-lg text-gray-600 hover:bg-gray-100 transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Body Sections -->
+    <main>
+        <!-- Home Section (Hero) -->
+        <section id="home" class="section-padding pt-12 md:pt-16 bg-slate-100 scroll-mt-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <h1 class="text-5xl md:text-6xl font-extrabold leading-tight" style="color: var(--accent-darkred);">Fostering Belonging, <span style="color: var(--accent-yellow);">Ending Isolation.</span></h1>
+                    <p class="mt-6 text-lg text-gray-600 max-w-lg">The Circles Edge, Inc. is a 501(c)[3] non-profit and our mission is to address issues surrounding bulling and how individuals are affected.  We strive to foster a sense of belonging for those who find themselves “on the outside” through an array of educational, social, and art oriented programs in an effort to assist individuals who may feel unconnected and isolated.</p>
+                    <div class="mt-8 flex flex-col sm:flex-row gap-4">
+                        <a href="#join" class="btn-primary text-white font-semibold py-3 px-6 rounded-xl shadow-lg hover:shadow-xl transform transition duration-300 ease-in-out">Get Involved Today</a>
+                        <a href="#about" class="bg-white text-gray-800 font-semibold py-3 px-6 rounded-xl border border-gray-300 shadow-md hover:bg-gray-50 transform transition duration-300 ease-in-out">Learn Our Mission</a>
+                    </div>
+                </div>
+                <!-- Placeholder Image/Graphic -->
+                <div class="md:w-1/2 flex justify-center p-8">
+                    <img src="./media/circlesEdgelogo1.png" alt="Circle's Edge Logo" class="w-[25rem] rounded-2xl shadow-2xl object-cover transform hover:scale-[1.01] transition-transform duration-500 ease-in-out">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="section-padding scroll-mt-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center" style="color: var(--accent-darkred);">About The Circle's Edge</h2>
+                <div class="mt-10 grid md:grid-cols-2 gap-10">
+                    <!-- Column 1: Organization Info -->
+                    <div class="p-6 bg-white rounded-xl shadow-lg border-t-4" style="border-top-color: var(--accent-darkred);">
+                        <h3 class="text-3xl font-bold mb-4 text-center py-2" style="color: var(--accent-yellow);">Mission Statement</h3>
+                        <p class="text-gray-600 text-center font-semibold">Our mission at The Circles Edge, Inc. is to address issues surrounding bulling and how individuals are affected.  We strive to foster a sense of belonging for those who find themselves “on the outside” through an array of educational, social, and art oriented programs in an effort to assist individuals who may feel unconnected and isolated.  Therefore, The Circle’s Edge, inc., offers meetings, socials, and educational events as vehicle for individuals to get involved and have a sense of belonging.</p>
+                        <ul class="mt-4 space-y-4 py-2 text-gray-700">
+                            <li class="flex items-start"><span class="mr-2 text-xl" style="color: var(--accent-darkred);">&bull;</span> 501(c)(3) Non-Profit Status</li>
+                            <li class="flex items-start"><span class="mr-2 text-xl" style="color: var(--accent-red);">&bull;</span> Focus on Bullying Prevention & Support</li>
+                            <li class="flex items-start"><span class="mr-2 text-xl" style="color: var(--accent-green);">&bull;</span> Serving Capital District (NY) and Mid-Atlantic (DMV)</li>
+                        </ul>
+                    </div>
+                    <!-- Column 2: Who Runs It (Leadership/Staff Mockup) -->
+                    <div class="p-6 bg-white rounded-xl shadow-lg border-t-4" style="border-top-color: var(--accent-darkred);">
+                        <h3 class="text-3xl font-bold mb-4 text-center py-2" style="color: var(--accent-yellow);">Meet Our Directors</h3>
+                        <p class="text-gray-600 mb-4 text-center font-semibold">Our organization is driven by a passionate Board of Directors who oversee operations, program development, and fundraising efforts.</p>
+                        <div class="space-y-4 py-2">
+                            <div class="flex items-center">
+                                <img src="./media/imeh_smith_134x158.jpg" class="w-10 h-10 rounded-full mr-3 border-2 border-[--accent-teal]" alt="Leadership Profile">
+                                <div>
+                                    <p class="font-medium">Imeh Smith</p>
+                                    <p class="text-sm text-gray-500">Founding Director</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="./media/bessie_thompson_142x175.gif" class="w-10 h-10 rounded-full mr-3 border-2 border-[--accent-teal]" alt="Leadership Profile">
+                                <div>
+                                    <p class="font-medium">Bessie Thompson</p>
+                                    <p class="text-sm text-gray-500">Outreach and Volunteer Coordinator</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="./media/ivan_nguyen_306x400.jpg" class="w-10 h-10 rounded-full mr-3 border-2 border-[--accent-teal]" alt="Leadership Profile">
+                                <div>
+                                    <p class="font-medium">Ivan Nguyen</p>
+                                    <p class="text-sm text-gray-500">Marketing Director</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="./media/tim_hepburn_163x162.gif" class="w-10 h-10 rounded-full mr-3 border-2 border-[--accent-teal]" alt="Leadership Profile">
+                                <div>
+                                    <p class="font-medium">Tim Hepburn</p>
+                                    <p class="text-sm text-gray-500">Fundraising and Donations</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Acknowledgements Section -->
+        <section id="acknowledgements" class="section-padding bg-slate-100 scroll-mt-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center" style="color: var(--accent-darkred);">Acknowledgements</h2>
+                <p class="text-center text-lg text-gray-600 mt-3 mb-12">This page is dedicated to all the past and present individuals, companies, organizations, and volunteers that have helped us via monetary donations, in-kind services, or as a volunteer.</p>
+                <div class="mt-10 grid md:grid-cols-2 gap-10">
+                    <!-- Column 1: Current Volunteers -->
+                    <div class="p-6 bg-white rounded-xl shadow-lg border-t-4" style="border-top-color: var(--accent-darkred);">
+                        <h3 class="text-3xl font-bold mb-4 text-center py-2" style="color: var(--accent-yellow);">Volunteers for The Circle's Edge</h3>
+                        <p class="text-gray-600 font-semibold mb-4 text-center">Thank you to those who have volunteered their time and efforts towards The Circle's Edge.</p>
+                        <ul class="text-gray-700 space-y-4 py-2">
+                            <li class="flex items-start"><span class="mr-2 text-xl" style="color: var(--accent-darkred);">&bull;</span>The Malcom X Drummers and Dancers</li>
+                            <li class="flex items-start"><span class="mr-2 text-xl" style="color: var(--accent-red);">&bull;</span>The students from Urasaki Chu Gakko (Urasaki Middle School) in Onomichi, Hiroshima, Japan</li>
+                            <li class="flex items-start"><span class="mr-2 text-xl" style="color: var(--accent-green);">&bull;</span>Deguchi Sensei, Mikki, her daughter Minari, and the other teachers, parents, and students from the various middle schools in Onomichi, Hiroshima who volunteered their time and video cameras for The Circle’s Edge, Inc. ™ International Scrap Book</li>
+                            <li class="flex items-start"><span class="mr-2 text-xl" style="color: var(--accent-orange);">&bull;</span>The students from Roots Alternative Learning Center charter school in N.E., DC</li>
+                            <li class="flex items-start"><span class="mr-2 text-xl" style="color: var(--accent-yellow);">&bull;</span>The students from the Model Secondary School for the Deaf at Gallaudet University</li>
+                            <li class="flex items-start"><span class="mr-2 text-xl" style="color: var(--accent-teal);">&bull;</span>The volunteers from The Culture Café who assisted us on an advisory board and helped us do our presentations</li>
+                            <li class="flex items-start"><span class="mr-2 text-xl" style="color: var(--accent-blue);">&bull;</span>Fred Beam and the dancers from the Wild Zappers and the National Deaf Dance Theater</li>
+                            <li class="flex items-start"><span class="mr-2 text-xl" style="color: var(--accent-darkred);">&bull;</span>The student volunteers from Howard University</li>
+                            <li class="flex items-start"><span class="mr-2 text-xl" style="color: var(--accent-red);">&bull;</span>Md. University Baltimore County Volunteer Sabella N. for volunteering her time as a phone bank volunteer</li>
+                            <li class="flex items-start"><span class="mr-2 text-xl" style="color: var(--accent-green);">&bull;</span>Fatma B. by volunteering to do data entry</li>
+                            <li class="flex items-start"><span class="mr-2 text-xl" style="color: var(--accent-orange);">&bull;</span>The art students at Woodlawn High in Baltimore, MD who donated their time and pieces of art for The Circle’s Edge Seminar at MLK Library</li>
+                        </ul>
+                    </div>
+                    <!-- Column 2: Showcase of abilities -->
+                    <div class="p-6 bg-white rounded-xl shadow-lg border-t-4" style="border-top-color: var(--accent-darkred);">
+                        <h3 class="text-3xl font-bold mb-4 text-center py-2" style="color: var(--accent-yellow);">Volunteers for the Showcase of Abilities</h3>
+                        <p class="text-gray-600 font-semibold mb-4 text-center">The Showcase of Abilities held on Friday, April 30th (Year here) from 6-10pm at Maryland University College Park Nyumburu Cultural Center featured a panel discussion, audience dialogue, refreshments, and a wonderful talent showcase with performers from Gallaudet University, the Baltimore Ravens Wheelchair Basketball League, and much more. This was part of our Awareness Project on Tolerance, Self Image, and Abilities. We wish to thank each and every person who showed up for our event as well as every person who helped contribute to this campaign and cause by participating one way or another.</p>
+                        <ul class="text-gray-700 space-y-4 py-2">
+                            <li class="flex items-start"><span class="mr-2 text-xl" style="color: var(--accent-darkred);">&bull;</span>Sarah Steal of with Seize the Day Mixed Ability Dance Troupe who help with The Circle’s Edge, Inc. ™ Awareness Project by granting us interviews and encouraging words</li>
+                            <li class="flex items-start"><span class="mr-2 text-xl" style="color: var(--accent-red);">&bull;</span>Angie’s Catering for donating cakes</li>
+                            <li class="flex items-start"><span class="mr-2 text-xl" style="color: var(--accent-green);">&bull;</span>Pastor Samuel Elliot, a senior pastor at Power in the World Ministry in Burtonsville, MD, for encouraging those to participate in the show</li>
+                            <li class="flex items-start"><span class="mr-2 text-xl" style="color: var(--accent-orange);">&bull;</span>The Volunteer from the Disabilities in Society class at MD University as well as Angie and her mother for donating cakes</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-10 grid md:grid-cols-2 gap-10">
+                    <!-- Column 1: Financial Contributions -->
+                    <div class="p-6 bg-white rounded-xl shadow-lg border-t-4" style="border-top-color: var(--accent-darkred);">
+                        <h3 class="text-3xl font-bold mb-4 text-center py-2" style="color: var(--accent-yellow);">Financial Donors</h3>
+                        <p class="text-gray-600 font-semibold mb-4 text-center">Thank you to those who have provided financial contributions towards The Circle's Edge.</p>
+                        <ul class="text-gray-700 space-y-4 py-2">
+                            <li class="flex items-start"><span class="mr-2 text-xl" style="color: var(--accent-darkred);">&bull;</span><span><a href="http://www.homedepot.com/">The Home Depot</a> store #2551 in Silver Spring, MD and their Human Resources Manager Mr. Romer Ellsworth for their donations of gift cards</span></li>
+                            <li class="flex items-start"><span class="mr-2 text-xl" style="color: var(--accent-red);">&bull;</span><span><a href="http://www.wholefoodsmarket.com/">Whole Foods</a> in Silver Spring for their donations of gift cards</span></li>
+                            <li class="flex items-start"><span class="mr-2 text-xl" style="color: var(--accent-green);">&bull;</span>Gladys W. for her generous financial donations and sponsorship in our book campaign</li>
+                            <li class="flex items-start"><span class="mr-2 text-xl" style="color: var(--accent-orange);">&bull;</span>Daisy B. for her donation to help get The Circle’s Edge off the ground</li>
+                            <li class="flex items-start"><span class="mr-2 text-xl" style="color: var(--accent-yellow);">&bull;</span>The Learning Institute</li>
+                            <li class="flex items-start"><span class="mr-2 text-xl" style="color: var(--accent-teal);">&bull;</span><span><a href="http://www.walmart.com/">Walmart</a></span></li>
+                            <li class="flex items-start"><span class="mr-2 text-xl" style="color: var(--accent-blue);">&bull;</span><span><a href="http://www.bestbuy.com/">Best Buy</a></span></li>
+                            <li class="flex items-start"><span class="mr-2 text-xl" style="color: var(--accent-darkred);">&bull;</span>Imeh Smith's mother</li>
+                        </ul>
+                    </div>
+                    <!-- Column 2: Non Financial Contributions (In Kind Service) -->
+                    <div class="p-6 bg-white rounded-xl shadow-lg border-t-4" style="border-top-color: var(--accent-darkred);">
+                        <h3 class="text-3xl font-bold mb-4 text-center py-2" style="color: var(--accent-yellow);">In-Kind Service</h3>
+                        <p class="text-gray-600 font-semibold mb-4 text-center">Thank you to those who have volunteered in-kind service towards The Circle's Edge.</p>
+                        <ul class="text-gray-700 space-y-4 py-2">
+                            <li class="flex items-start"><span class="mr-2 text-xl" style="color: var(--accent-darkred);">&bull;</span><span>The Montgomery County branch of <a href="http://www.comcast.com/">Comcast</a> Cable television for producing the Comcast Local Edition for us</span></li>
+                            <li class="flex items-start"><span class="mr-2 text-xl" style="color: var(--accent-red);">&bull;</span>Jeff R. for his demolition, concrete, and brickwork</li>
+                            <li class="flex items-start"><span class="mr-2 text-xl" style="color: var(--accent-green);">&bull;</span>Tim H. for his computer, carpentry, and basic electrical/electronic work</li>
+                            <li class="flex items-start"><span class="mr-2 text-xl" style="color: var(--accent-orange);">&bull;</span>Richard S. for his willingness to use his bull dozer and land clearing machine</li>
+                            <li class="flex items-start"><span class="mr-2 text-xl" style="color: var(--accent-yellow);">&bull;</span><span>Marshall Love, manager of <a href="http://www.twopair.com/">America's Best</a> in NW, DC for showing up to meetings and events as well as producing and arranging music for our various projects</span></li>
+                            <li class="flex items-start"><span class="mr-2 text-xl" style="color: var(--accent-teal);">&bull;</span>The Ivy Mount School in Bethesda, MD and Mr. Sterling Frenell’s vocational class for help with our mailings and brochures</li>
+                            <li class="flex items-start"><span class="mr-2 text-xl" style="color: var(--accent-blue);">&bull;</span>Phyllis M. for her assistance in grant writing, editing, and financial help</li>
+                            <li class="flex items-start"><span class="mr-2 text-xl" style="color: var(--accent-darkred);">&bull;</span><span>Darcy K. and <a href="http://seowebmechanics.com/">SEO Web Mechanics</a> for the donation of our new website and for setting up our email and hosting account on GoDaddy on a donation basis</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Join Us Section (Volunteers and Members) -->
+        <section id="join" class="section-padding scroll-mt-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center" style="color: var(--accent-darkred);">Join Our Movement</h2>
+                <p class="text-center text-lg text-gray-600 mt-3 mb-12">Whether you can offer time, skills, or just want to participate, there's a place for you at Circle's Edge.</p>
+                <div class="grid md:grid-cols-2 gap-10">
+                    <!-- Card 1: Volunteer Opportunities -->
+                    <div class="p-8 bg-white rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-t-8" style="border-top-color: var(--accent-darkred);">
+                        <h3 class="text-3xl font-bold mb-4 text-center" style="color: var(--accent-yellow);">Become a Volunteer</h3>
+                        <p class="text-gray-600 font-semibold mb-6 text-center">We rely on volunteers for hands-on support, paid work-study roles, court-appointed service, and virtual assistance. Join us in our events and social programs!</p>
+                        <form class="space-y-4">
+                            <div>
+                                <label for="volunteer-name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                                <input type="text" id="volunteer-name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-3 focus:border-cyan-500 focus-ring-accent focus:ring-2" placeholder="Jane Doe">
+                            </div>
+                            <div>
+                                <label for="volunteer-role" class="block text-sm font-medium text-gray-700">Preferred Role Type</label>
+                                <select id="volunteer-role" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-3 focus:border-cyan-500 focus-ring-accent focus:ring-2">
+                                    <option>Hands-on/Event Support</option>
+                                    <option>Virtual/Administrative</option>
+                                    <option>Work-Study</option>
+                                    <option>Court-Appointed Service</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn-primary text-white font-semibold py-3 px-6 rounded-xl w-full shadow-lg transform hover:scale-[1.01] transition duration-300 ease-in-out">Apply to Volunteer</button>
+                        </form>
+                    </div>
+
+                    <!-- Card 2: Membership/Participation -->
+                    <div class="p-8 bg-white rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-t-8" style="border-top-color: var(--accent-darkred);">
+                        <h3 class="text-3xl font-bold mb-4 text-center" style="color: var(--accent-yellow);">Become a Member</h3>
+                        <p class="text-gray-600 font-semibold mb-6 text-center">Membership is free! It simply ensures you get timely updates on our local meetings, socials, and educational events in your region (DMV or NY).</p>
+                        <form class="space-y-4">
+                            <div>
+                                <label for="member-email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                                <input type="email" id="member-email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-3 focus:border-blue-500 focus-ring-accent focus:ring-2" placeholder="you@example.com">
+                            </div>
+                            <div>
+                                <label for="member-region" class="block text-sm font-medium text-gray-700">Primary Region</label>
+                                <select id="member-region" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-3 focus:border-blue-500 focus-ring-accent focus:ring-2">
+                                    <option>Mid-Atlantic (DC/MD/VA)</option>
+                                    <option>Capital District (Upstate NY)</option>
+                                    <option>Other/Virtual</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn-primary text-white font-semibold py-3 px-6 rounded-xl w-full shadow-lg transform hover:scale-[1.01] transition duration-300 ease-in-out">Sign Up for Membership</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Donate Section -->
+        <section id="donate" class="section-padding bg-slate-100 scroll-mt-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center" style="color: var(--accent-darkred);">Power Our Programs</h2>
+                <p class="text-center text-lg text-gray-600 mt-3 mb-16">Your financial support is critical to maintaining our free events, educational materials, and outreach efforts.</p>
+                <div class="grid md:grid-cols-1 place-items-center my-12">
+                    <div class="p-8 border rounded-2xl shadow-xl bg-slate-50 text-center max-w-[600px] mx-auto w-full">
+                        <h3 class="text-3xl font-bold mb-4 text-center py-2" style="color: var(--accent-yellow);">Make a Tax-Deductible Gift</h3>
+                        <p class="text-gray-600 font-semibold mb-6 text-center">As a 501(c)(3) organization, every donation is tax-deductible and directly supports our mission to fight isolation and bullying. We are unable to be successful without your support!</p>
+                        <div class="mt-12 mb-6">
+                            <a href="https://www.paypal.com/donate?token=yoihUw6jHvnxsz38U5N-gsxc8x9ljnOanPRcJxyyzhUNodc684yR80TZPNm_6uBWdlTQZG4D5bmPoBum" class="btn-primary text-white font-extrabold text-xl py-4 px-8 rounded-xl w-full text-center shadow-2xl transform hover:scale-[1.02] transition duration-300 ease-in-out">Donate Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section id="contact" class="section-padding bg-slate-800 text-white scroll-mt-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center mb-10" style="color: var(--accent-yellow);">Get In Touch</h2>
+                <div class="grid md:grid-cols-2 gap-12">
+                    <!-- Contact Info -->
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4">Contact Information</h3>
+                        <p class="text-slate-300 mb-6">Have questions about events, volunteering, or partnerships? Reach out to our main office.</p>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <svg class="w-6 h-6 mr-3 mt-1" style="fill: var(--accent-darkred);" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" style="fill: var(--accent-yellow);"/></svg>
+                                <div>
+                                    <p class="font-medium text-lg">Email Address</p>
+                                    <p class="text-slate-300 break-words">volunteer@CirclesEdge.org</p>
+                                    <p class="text-slate-300 break-words">donate@CirclesEdge.org</p>
+                                    <p class="text-slate-300 break-words">info@CirclesEdge.org</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <svg class="w-6 h-6 mr-3 mt-1" style="fill: var(--accent-darkred);" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-.5-5h1c.28 0 .5-.22.5-.5V7h-2v7.5c0 .28.22.5.5.5z" style="fill: var(--accent-yellow);"/></svg>
+                                <div>
+                                    <p class="font-medium text-lg">Mailing Address</p>
+                                    <p class="text-slate-300">Circles Edge, Inc. 1. O. Box 895, Cohoes, NY 20738</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <svg class="w-6 h-6 mr-3 mt-1" style="fill: var(--accent-darkred);" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 3.11 4.18 2 2 0 0 1 5.11 2h3a2 2 0 0 1 2 1.72 12.6 12.6 0 0 0 .57 2.57 2 2 0 0 1-.45 2.11L9 9.91a16 16 0 0 0 7.09 7.09l1.51-1.51a2 2 0 0 1 2.11-.45 12.6 12.6 0 0 0 2.57.57A2 2 0 0 1 22 16.92z" style="fill: var(--accent-yellow);"/></svg>
+                                <div>
+                                    <p class="font-medium text-lg">Phone Numbers</p>
+                                    <p class="text-slate-300">Office: 518-635-0008</p>
+                                    <p class="text-slate-300">Fax: 518-514-1172</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Linktree / Social Links -->
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4">Our Linktree & Socials</h3>
+                        <p class="text-slate-300 mb-6">Follow us for real-time event announcements, success stories, and updates across our two regions.</p>
+                        <div class="space-y-3">
+                            <a href="https://linktr.ee/TheCirclesEdge" class="flex items-center bg-slate-700 p-4 rounded-xl hover:bg-slate-600 transition duration-200">
+                                <svg class="w-6 h-6 mr-3 mt-1" style="fill: var(--accent-darkred);" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.59 13.41a1.995 1.995 0 0 0 2.82 0l3.18-3.18a2 2 0 1 0-2.83-2.83l-.88.88-1.41-1.41.88-.88a4 4 0 1 1 5.66 5.66l-3.18 3.18a4 4 0 0 1-5.66 0l-.88-.88 1.41-1.41.88.88zm2.82-2.82-1.41 1.41-.88-.88a1.995 1.995 0 0 0-2.82 0L5.12 14a4 4 0 1 0 5.66 5.66l.88-.88-1.41-1.41-.88.88a2 2 0 1 1-2.83-2.83l3.18-3.18a2 2 0 0 1 2.83 0l.88.88 1.41-1.41-.88-.88z" style="fill: var(--accent-yellow);"/></svg>
+                                <span class="font-medium">Linktree - Join Us</span>
+                            </a>
+                            <a href="https://www.facebook.com/TheCirclesEdgeInc/" class="flex items-center bg-slate-700 p-4 rounded-xl hover:bg-slate-600 transition duration-200">
+                                <svg class="w-6 h-6 mr-3 mt-1" style="fill: var(--accent-darkred);" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 12a10 10 0 1 0-11.5 9.87v-6.99h-2.3V12h2.3V9.8c0-2.27 1.35-3.53 3.42-3.53.99 0 2.03.18 2.03.18v2.23h-1.14c-1.12 0-1.47.7-1.47 1.42V12h2.5l-.4 2.88h-2.1v6.99A10 10 0 0 0 22 12z" style="fill: var(--accent-yellow);"/></svg>
+                                <span class="font-medium">Facebook - Updates</span>
+                            </a>
+                            <a href="https://www.youtube.com/@thecirclesedgeinc1541" class="flex items-center bg-slate-700 p-4 rounded-xl hover:bg-slate-600 transition duration-200">
+                                <svg class="w-6 h-6 mr-3 mt-1" style="fill: var(--accent-darkred);" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.8 8.001s-.2-1.4-.8-2.001c-.8-.8-1.7-.801-2.1-.851C15.9 5 12 5 12 5h-.1s-3.9 0-6.9.149c-.4.05-1.3.051-2.1.851-.6.601-.8 2.001-.8 2.001S2 9.6 2 11.2v1.6c0 1.6.2 3.199.2 3.199s.2 1.4.8 2c.8.801 1.9.751 2.4.851C8.1 19 12 19 12 19s3.9 0 6.9-.149c.4-.05 1.3-.051 2.1-.851.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.6c0-1.6-.2-3.199-.2-3.199zM10 14.5v-5l5 2.5-5 2.5z" style="fill: var(--accent-yellow);"/></svg>
+                                <span class="font-medium">YouTube - Educational Content</span>
+                            </a>
+                            <a href="http://circlesedge.us1.list-manage.com/subscribe/post?u=6ffa1f1dbb7e56cd571b3209e&id=2c5c9e946d" class="flex items-center bg-slate-700 p-4 rounded-xl hover:bg-slate-600 transition duration-200">
+                                <svg class="w-6 h-6 mr-3 mt-1" style="fill: var(--accent-darkred);" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" style="fill: var(--accent-yellow);"/></svg>
+                                <span class="font-medium">Mailing List - Stay up to Date</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-slate-900 py-8 text-center text-slate-400">
+        <p>&copy; 2025 The Circle's Edge, Inc. | All Rights Reserved | 501(c)(3) Non-Profit</p>
+    </footer>
+
+</body>
+</html>
